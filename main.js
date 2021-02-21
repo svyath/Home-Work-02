@@ -20,18 +20,18 @@
 //  до 500 гривень знижка -1 %, від 500 до 1000 - 5%, більше 1000 - 10% та подарунковий сертифікат на 200 гривень у подарунок! 
     let orderPrice = +prompt("Сума замовлення?");
 
-    const onePercentDiscount = 0.01;
-    const fivePercentDiscount = 0.05;
-    const tenPercentDiscount = 0.1;
+    const ONE_PERCENT_DISCOUNT = 0.01;
+    const FIVE_PERCENT_DISCOUNT = 0.05;
+    const TEN_PERCENT_DISCOUNT = 0.1;
 
     if(orderPrice < 500){
-        alert(`Ви отримали знижку -1%, сума замовлення із врахуванням знижки: ${orderPrice*onePercentDiscount}`);
+        alert(`Ви отримали знижку -1%, сума замовлення із врахуванням знижки: ${orderPrice*ONE_PERCENT_DISCOUNT}`);
     }
     else if(orderPrice >= 500 && orderPrice < 1000){
-        alert(`Ви отримали знижку -5%, сума замовлення із врахуванням знижки: ${orderPrice*fivePercentDiscount}`);
+        alert(`Ви отримали знижку -5%, сума замовлення із врахуванням знижки: ${orderPrice*FIVE_PERCENT_DISCOUNT}`);
     }
     else if(orderPrice >= 1000){
-        alert(`Ви отримали знижку -10%, сума замовлення із врахуванням знижки: ${orderPrice*tenPercentDiscount}.
+        alert(`Ви отримали знижку -10%, сума замовлення із врахуванням знижки: ${orderPrice*TEN_PERCENT_DISCOUNT}.
         Сертифікат на 200 гривень у подарунок!`);
     }
 
@@ -50,7 +50,7 @@
     if (answer2 === "вигнанця"){
         score += 1;
     } 
-    if (answer3 === "3"){
+    if (answer3 === 3){
         score += 1;
     } 
     if (answer4 === "собаку"){
